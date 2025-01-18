@@ -9,7 +9,7 @@ describe WordGuesserGame do
     end
   end
 
-  describe 'new', pending: true do
+  describe 'new' do
     it "takes a parameter and returns a WordGuesserGame object" do
       @game = described_class.new('glorp')
       expect(@game).to be_an_instance_of(described_class)

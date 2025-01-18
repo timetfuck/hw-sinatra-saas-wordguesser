@@ -6,6 +6,15 @@ class WordGuesserApp < Sinatra::Base
   enable :sessions
   register Sinatra::Flash
 
+  attr_accessor :word, :guesses, :wrong_guesses
+
+  def initialize(word)
+    @word = word
+    @guesses = '' 
+    @wrong_guesses = '' 
+  end
+  
+
   before do
     @game = session[:game] || WordGuesserGame.new('')
   end

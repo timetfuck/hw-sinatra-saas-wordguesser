@@ -23,3 +23,5 @@ group :development, :test do
   gem 'webmock', '3.3.0'
   gem 'ZenTest', '4.11.2'
 end
+
+gem "autotest", "<= 4.7"
